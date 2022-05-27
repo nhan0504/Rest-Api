@@ -1,24 +1,37 @@
-# Rest Api
-## Api
-- What is  Api (Aplication programming interface): Set of rules how application or device can communicate and connect each other.
-  - Interface: Let you control or work with something without knowing how it is implemented 
+# Api
+## What is API (Aplication programming interface)
+- Interface: Let you control or work with something without knowing how it is implemented 
+- Application programming: Specifically for programmer 
+- API: An interface for programmer, a set of rules how their applications or devices can communicate and connect with other applications.
+## Why use API
+- You want to use other resources -> Don't have to write your own code -> You have to work with their API
 - APIs let you work with other product and services without knowing how it was implemented -> Flexible and simple
-- Remote APIs: The resources is outisde the comupter that request it. Most common communication network is internet -> Most APIs are designed on web standards. 
-> Not all APIs are web APIs. But web APIs are remote APIs 
-- Web API develop -> Need protocols to standardize. Two types web API
-  - SOAP API (Simple Object acsess protocol):
+## Type of API
+- Remote APIs: The resources is outisde the comupter that request it. Most common communication network is internet -> Most APIs are designed on web standards -> Called web API
+> Not all APIs are web APIs. But all web APIs are remote APIs 
+- Web API develop -> Need protocols to standardize -> Come two types web API
+  - **SOAP API (Simple Object acsess protocol)**
     - Use XML for message format
-    - Receive reques tthrough HTTP/SMTP
+    - Receive request through HTTP/SMTP
     - Use for apps running in different environment or written in different language to share information
-  - REST API (Representational State Transfer): Not a protocol but an architectural style
+  - **REST API (Representational State Transfer):** Not a protocol but an architectural style
     - Client-server architecture: Composed of client, server, and resources. Handle request through HTTP
     - Statelessness: No client content is store on the server between request
+    - Cachability: Result can be cached
     - Layered system: Client-server interaction can go through additional layers like balancing, security, ...
     - Uniform interface: Include 4 facts
       - Resources indetify in request are separate from the representation sent to client
       - Resource manipulation through representations: Client receive file that represent the resources that they can modify
       - Self-descriptive messages: Message returned to client contain information on how the client can process the information
       - Hypermedia as the engine of application state: After accessing the resources, client can discover through hyperlink all possible actions.
+    - **GraphQL**
+      - Instead of making each request to get each resource -> Make one request to GraphQL -> GraphQL act as an assistant to get the resources
+      - Let clients ask for data they need
+      - Make it easier to get data from many sources
+      - Three component:
+        -  Query
+        -  Resolver
+        -  Schema
 ## API security
 - REST APIs use HTTP that support TLS (Transport Layer Security) encryption
 
