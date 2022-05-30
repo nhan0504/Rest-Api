@@ -52,3 +52,14 @@
     - The header: Offers information to server and client. Used for various purposes such as authentication and providing information about the body content.
     - The data: The inforation client send to server
 - Response: The data sent back is a response
+### Format of a request
+- Start line: HTTP verb + The URI
+- Headers: Contain metadata about the request
+  - Accept header: Tell the server the accepted format
+  - Authorization header: Tell the server you're authorize
+- Body: Custom data
+### Format of a response
+- Staus code: Inform what happened to the request
+  - 200 level: Everything went well
+  - 400 level: Something was wrong with the request
+  - 500 level: The server failed
