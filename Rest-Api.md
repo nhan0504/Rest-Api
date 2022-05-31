@@ -63,3 +63,5 @@
   - 200 level: Everything went well
   - 400 level: Something was wrong with the request
   - 500 level: The server failed
+- Header: Contains information about the server
+- Body: Contain the data usually in JSON format
