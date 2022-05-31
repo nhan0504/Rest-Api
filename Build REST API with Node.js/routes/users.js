@@ -15,4 +15,10 @@ router.get('/', (req, res) => {
     res.send(users);
 })
 
+router.post('/', (req, res) => {
+    const user = req.body;
+    users.push(user);
+    res.send("New user was added to database");
+});
+
 export default router;
