@@ -1,12 +1,18 @@
-# Api
-## What is API (Aplication programming interface)
+- [What is API (Aplication programming interface)](#what-is-api-aplication-programming-interface)
+- [Why use API](#why-use-api)
+- [Type of API](#type-of-api)
+- [API security](#api-security)
+- [REST](#rest)
+  - [Format of a request](#format-of-a-request)
+  - [Format of a response](#format-of-a-response)
+# What is API (Aplication programming interface)
 - Interface: Let you control or work with something without knowing how it is implemented 
 - Application programming: Specifically for programmer 
 - API: An interface for programmer, a set of rules how their applications or devices can communicate and connect with other applications.
-## Why use API
+# Why use API
 - You want to use other resources -> Don't have to write your own code -> You have to work with their API
 - APIs let you work with other product and services without knowing how it was implemented -> Flexible and simple
-## Type of API
+# Type of API
 - Remote APIs: The resources is outisde the comupter that request it. Most common communication network is internet -> Most APIs are designed on web standards -> Called web API
 > Not all APIs are web APIs. But all web APIs are remote APIs 
 - Web API develop -> Need protocols to standardize -> Come two types web API
@@ -32,10 +38,10 @@
         -  Query
         -  Resolver
         -  Schema
-## API security
+# API security
 - REST APIs use HTTP that support TLS (Transport Layer Security) encryption
 
-## REST
+# REST
 - Client make requests through HTTP (link to a specific URL) -> Transfer representations of the state of resources back to client in one of several format via HTTP: JSON, HTML, Python, ... JSON is the most popular
 - Request: Each URL is a request
   - Made up of 4 majot parts:
@@ -52,13 +58,13 @@
     - The header: Offers information to server and client. Used for various purposes such as authentication and providing information about the body content.
     - The data: The inforation client send to server
 - Response: The data sent back is a response
-### Format of a request
+## Format of a request
 - Start line: HTTP verb + The URI
 - Headers: Contain metadata about the request
   - Accept header: Tell the server the accepted format
   - Authorization header: Tell the server you're authorize
 - Body: Custom data
-### Format of a response
+## Format of a response
 - Staus code: Inform what happened to the request
   - 200 level: Everything went well
   - 400 level: Something was wrong with the request
